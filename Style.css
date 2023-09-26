@@ -1,6 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+:root {
+    --font:'Red Hat Display', sans-serif;
+
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
 @font-face {
     font-family: 'Red Hat Display', sans-serif;
     src: url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.card {
+    width: 96%;
+    border: 1px solid red;
+    border-radius: 15px;
+}
+
+/*HEADER*/
+
+.img {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/*END HEADER*/
+
+/*MAIN*/
+
+main {
+    display: flex; 
+    flex-direction: column;
+}
+.card-in{
+    padding: 30px 20px 30px 20px
+}
+
+.title {
+    color: var(--Dark-blue);
+    font-size: 16px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.paragraph {
+    text-align: center;
+    color: var(--Desaturated-blue);
+    line-height: 25px;
+    padding: 20px 0px 20px 0;
+}
+
+/*CONTAINER IMG DE MUSIC*/
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+}
+
+.paragraph-2 {
+    color: var(--Dark-blue);
+    font-weight: 700;
+}
+
+.money {
+    color: var(--Desaturated-blue);
+    font-weight: 500px;
+}
+
+
+
+
+
+
+/*END CONTAINER IMG DE MUSIC*/
+
+/*END MAIN*/

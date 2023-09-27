@@ -32,7 +32,7 @@ body {
 }
 
 .card {
-    width: 90%;
+    width: 350px;
     box-shadow: 4px 5px 30px gray;
     border-radius: 15px;
     margin-top:20%;
@@ -177,8 +177,15 @@ main {
 
 /*MEDIA QUERY*/
 
-@media screen {
-    
+@media (min-width: 376px) {
+    body {
+        background-image: url(images/pattern-background-desktop.svg);
+    }
+
+    .card {
+        margin-top: 10%;
+        background-color: white;
+    }
 }
 
 /*END MEDIA QUERY*/
